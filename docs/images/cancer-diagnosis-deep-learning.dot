@@ -2,9 +2,9 @@ digraph BreastCancerDiagnosis {
     bgcolor = "transparent";
     node [shape=box, style=filled, fillcolor="#a89bb9"];
     compound=true;
-    Graph [fontsize=11];
-    node [fontsize=11];
-    edge [fontname=11];
+    Graph [fontsize=11, fontname="helvetica"];
+    node [fontsize=11, fontname="helvetica"];
+    edge [fontname=11, fontname="helvetica"];
 
     doctor [label="Breast Cancer Diagnosis\n(Doctor)", fillcolor="#CB6077"];
 
