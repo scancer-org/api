@@ -7,15 +7,17 @@ detection. At its core is a collection of learnt detection models (in
 [TorchServe](https://pytorch.org/serve/)).
 
 The specific procedures that are used to diagnose breast cancer are
-depicted in the graphic below. And Scancer aims to have
-state-of-the-art models to assist with all the procedures denoted in
-purple.
+depicted in the following graphic, and the ones that would most
+benefit from computer vision are denoted in purple. The Scancer
+project aims to collect state-of-the-art models for each of these.
 
 ![Tests and procedures used to diagnose breast cancer](docs/images/cancer-diagnosis-deep-learning.svg)
 
+TODO: Insert a table of models and their status here
+
 The documentation in this repository shows you:
 
-1. [How to use these models for detection](docs/detection.md)
+1. [How to use these models for detection](docs/using.md)
 2. [How to improve on existing models, or contribute new ones](docs/contributing.md)
 3. [How to monitor the API in production](docs/monitoring.md)
 
@@ -33,5 +35,3 @@ Daniel Hen.
 This code is licenced under the MIT Licence. See
 [LICENSE](https://github.com/scancer-org/api/blob/main/LICENSE) for
 the full text of this licence.
-
-[email]: mailto:mail@harishnarayanan.org

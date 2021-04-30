@@ -11,7 +11,7 @@ and wish to help with this project, please [let us know][email]. We
 will get you in touch with teams working on data modelling who would
 be happy to use your assistance with better training our models.
 
-You can also get in touch if you would like to user [prototypes of our
+You can also get in touch if you would like to use [prototypes of our
 application](https://scancer.org/) and provide feedback to improve its
 usage in a clinical setting.
 
@@ -22,7 +22,7 @@ repository from
 `https://github.com/scancer-org/ml-<dataset>-<task>`. Modify the model
 or hyperparameters of the existing model and submit a pull request if
 you find that its performance characteristics are better than the
-existing case.
+existing model.
 
 To submit a new model, please use one of the existing models as a
 template for how to setup your repository. Do write to us before you
@@ -32,9 +32,9 @@ training and documenting your model, we will work with you to
 incorporate it as a model under the umbrella of the organisation and
 give you access to our model store to upload your trained model.
 
-#### How to manage models in our model store
+### How to manage models in our model store
 
-##### Generate an archive of your best model
+#### Generate an archive of your best model
 
 1. Output the weights of your PyTorch model in a very specific way,
    following this example for `pcam-classification`:
@@ -71,3 +71,5 @@ give you access to our model store to upload your trained model.
    # Scale up and down the workers
    TODO
    ````
+
+[email]: mailto:mail@harishnarayanan.org
