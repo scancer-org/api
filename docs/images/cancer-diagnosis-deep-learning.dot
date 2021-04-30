@@ -1,0 +1,22 @@
+digraph BreastCancerDiagnosis {
+    bgcolor = "transparent";
+    node [shape=box, style=filled, fillcolor="#a89bb9"];
+    compound=true;
+    Graph [fontsize=11];
+    node [fontsize=11];
+    edge [fontname=11];
+
+    doctor [label="Breast Cancer Diagnosis\n(Doctor)", fillcolor="#CB6077"];
+
+    manualExam [label="Manual Exam\n(Doctor)", fillcolor="#d0c8c6"];
+    mammogram [label="Mammogram\n(Radiologist)"];
+    ultrasound [label="Ultrasound\n(Sonographer)"];
+    mri [label="MRI\n(Radiologist)"];
+    biopsy [label="Biopsy\n(Pathologist)"];
+
+    manualExam -> doctor;
+    mammogram -> doctor;
+    ultrasound -> doctor;
+    mri -> doctor;
+    biopsy -> doctor;
+}
