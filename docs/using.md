@@ -9,7 +9,7 @@ to it, but please [write to us][email] if you would like to use
 it. Send us a short description of your intended usage and we will be
 happy to get you setup with credentials.
 
-Once you have credentials (`name, password`), you can perform
+Once you have credentials (`username, password`), you can perform
 inference on medical images to aid in cancer detection in the
 following way:
 
@@ -27,10 +27,10 @@ following way:
 3. The endpoint you need to access for this model is systematically
    named `https://api.scancer.org/predictions/<dataset>-<task>`, and it
    always contains our best performing model for this task. You can
-   perform inference with it by `PUT`ting an image to it as in the
+   perform inference with it by `PUT`ting an image to it, as in the
    following example:
    ````
-   curl --user <name>:<password> https://api.scancer.org/predictions/pcam-classification -T pcam-example.png
+   curl --user <username>:<password> https://api.scancer.org/predictions/pcam-classification -T pcam-example.png
    ````
    The server will respond with a response that corresponds to the
    task at hand. e.g. In this case, it will return 0 (no metastatic
