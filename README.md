@@ -33,7 +33,7 @@ scripts](https://github.com/scancer-org/setup/).
 ## Copyright and license
 
 Copyright (c) 2021 [Harish Narayanan](https://harishnarayanan.org) and
-Daniel Hen.
+[Daniel Hen](https://www.linkedin.com/in/daniel-hen/).
 
 This code is licenced under the MIT Licence. See
 [LICENSE](https://github.com/scancer-org/api/blob/main/LICENSE) for
