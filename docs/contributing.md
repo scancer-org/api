@@ -87,9 +87,9 @@ learn how to package your new model and upload it to our model store.
 
    If it is larger, you can consider [Git
    LFS](https://git-lfs.github.com) or any other mechanism to host
-   your file (e.g. [Amazon S3](https://aws.amazon.com/s3/).
+   your file (e.g. [Amazon S3](https://aws.amazon.com/s3/)).
 
-## How to manage models in the Scancer model store
+### How to manage models in the Scancer model store
 
 The Scancer Project’s breast cancer detection model store can be found
 at
@@ -104,7 +104,7 @@ with it using [a standard gRPC API][ts-management-api]. For each of
 the following commands, you will be prompted for your `password`.
 
 
-### Get a list of existing models
+#### Get a list of existing models
 
 ````
 $ curl -u username https://model-store.scancer.org/models/
@@ -119,7 +119,7 @@ $ curl -u username https://model-store.scancer.org/models/
 }
 ````
 
-### Get the details of a specific model
+#### Get the details of a specific model
 
 ````
 $ curl -u username https://model-store.scancer.org/models/pcam-classification
@@ -135,7 +135,7 @@ $ curl -u username https://model-store.scancer.org/models/pcam-classification
 ]
 ````
 
-### Upload your packaged model archive
+#### Upload your packaged model archive
 
 ````
 $ curl -X POST -u username https://model-store.scancer.org/models/?url=https://github.com/scancer-org/ml-pcam-classification/raw/main/models/pcam-classification.mar
@@ -145,7 +145,7 @@ $ curl -X POST -u username https://model-store.scancer.org/models/?url=https://g
 }
 ````
 
-### Scale up (and down) workers for this model
+#### Scale up (and down) workers for this model
 
 ````
 $ curl -X PUT -u username https://model-store.scancer.org/models/pcam-classification?min_worker=2&max_worker=2
@@ -187,7 +187,7 @@ $ curl -u username https://model-store.scancer.org/models/pcam-classification
 ]
 ````
 
-### Remove a specific model
+#### Remove a specific model
 
 ⛔ Please be very careful when attempting this.
 
