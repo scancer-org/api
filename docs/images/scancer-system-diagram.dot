@@ -1,0 +1,22 @@
+digraph BreastCancerDiagnosis {
+    bgcolor = "transparent";
+    rankdir = "LR";
+    node [shape=box, style=filled, fillcolor="#a89bb9"];
+    compound=true;
+    Graph [fontsize=11, fontname="helvetica"];
+    node [fontsize=11, fontname="helvetica"];
+    edge [fontname=11, fontname="helvetica"];
+
+    model_1 [label="Detection Model 1 (PyTorch)"];
+    model_2 [label="Detection Model 2 (PyTorch)"];
+    model_3 [label="Detection Model 3 (PyTorch)"];
+    model_store [label="Model Store (TorchServe)", fillcolor="#f5eeeb"];
+    api [label="API (TorchServe)", fillcolor="#8ab3b5"];
+    webapp [label="Web App (Django)", fillcolor="#cb6077"];
+
+    model_1 -> model_store;
+    model_2 -> model_store;
+    model_3 -> model_store;
+    model_store -> api;
+    api -> webapp [dir="both"];
+}
