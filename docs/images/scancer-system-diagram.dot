@@ -7,12 +7,12 @@ digraph BreastCancerDiagnosis {
     node [fontsize=11, fontname="helvetica"];
     edge [fontname=11, fontname="helvetica"];
 
-    model_1 [label="Detection Model 1 (PyTorch)"];
-    model_2 [label="Detection Model 2 (PyTorch)"];
-    model_3 [label="Detection Model 3 (PyTorch)"];
-    model_store [label="Model Store (TorchServe)", fillcolor="#f5eeeb"];
-    api [label="API (TorchServe)", fillcolor="#8ab3b5"];
-    webapp [label="Web App (Django)", fillcolor="#cb6077"];
+    model_1 [label="Detection Model 1\n(PyTorch)"];
+    model_2 [label="Detection Model 2\n(PyTorch)"];
+    model_3 [label="Detection Model 3\n(PyTorch)"];
+    model_store [label="Model Store\n(TorchServe)", fillcolor="#d0c8c6"];
+    api [label="API\n(TorchServe)", fillcolor="#8ab3b5"];
+    webapp [label="Web App\n(Django)", fillcolor="#cb6077"];
 
     model_1 -> model_store;
     model_2 -> model_store;
